@@ -1,0 +1,29 @@
+{
+  "players": [
+    {
+      "player": "Tony",
+      "hc": 8,
+      "status": ""
+    },
+    {
+      "player": "Beast",
+      "hc": 5,
+      "status": "Ongoing"
+    },
+    {
+      "player": "Iwin",
+      "hc": 12,
+      "status": "Ongoing"
+    },
+    {
+      "player": "Tunde",
+      "hc": 12,
+      "status": "X"
+    },
+    {
+      "player": "AJ",
+      "hc": 17,
+      "status": "X"
+    }
+  ]
+}
