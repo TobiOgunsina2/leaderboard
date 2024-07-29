@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full h-full">
+  <div class="w-full h-full flex items-center justify-center">
     <svg
       v-if="this.params.data.status == 'X'"
-      class="w-10 h-10"
+      class="w-5/6 h-5/6"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="rgb(36, 193, 255)"
@@ -11,8 +11,8 @@
         d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM9 9V15H11V9H9ZM13 9V15H15V9H13Z"
       ></path></svg
     ><svg
-      v-if="this.params.data.status == 'Ongoing'"
-      class="w-10 h-10"
+      v-if="this.params.data.status == ''"
+      class="w-5/6 h-5/6"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="rgb(36, 193, 255)"
@@ -22,8 +22,8 @@
       ></path>
     </svg>
     <svg
-      v-if="this.params.data.status == ''"
-      class="w-10 h-10"
+      v-if="this.params.data.status == 'Ongoing'"
+      class="w-5/6 h-5/6"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="rgb(36, 193, 255)"
@@ -48,3 +48,13 @@ export default {
   setup() {}
 }
 </script>
+
+<style scoped>
+@media screen and (max-width: 450px) {
+  svg,
+  path {
+    width: 150%;
+    height: 150%;
+  }
+}
+</style>

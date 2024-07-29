@@ -12,7 +12,7 @@ const togglePopUp = (player) => {
 </script>
 
 <template>
-  <div class="content" :style="popup ? { opacity: '0.65', filter: 'brightness(70%)' } : {}">
+  <div class="content h-full" :style="popup ? { opacity: '0.65', filter: 'brightness(70%)' } : {}">
     <h1 class="text-xl my-3 ml-3 text-gray-700">LXG Leaderboard 2024</h1>
     <TableComponent @togglePopUp="togglePopUp" :golf-data="golfData"></TableComponent>
   </div>
